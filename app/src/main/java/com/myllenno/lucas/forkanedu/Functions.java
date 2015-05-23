@@ -66,7 +66,7 @@ public class Functions {
 
     private static int counterRegister(String fileRead) throws IOException {
         BufferedReader bufferedReader = openFile(fileRead);
-        // Counter the number the register.
+        // Count the number the register.
         int acm = 0;
         String line = bufferedReader.readLine();
         while (line != null){
