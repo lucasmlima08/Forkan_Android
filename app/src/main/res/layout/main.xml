@@ -1,0 +1,124 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".Main"
+    android:background="@drawable/fundo">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:baselineAligned="false">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="7"></RelativeLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/logo"
+                    android:adjustViewBounds="false"
+                    android:scaleType="fitCenter"
+                    android:layout_weight="1.2" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:text="@string/novoJogo"
+                        android:id="@+id/novoJogo"
+                        android:layout_weight="1"
+                        android:textSize="@dimen/menu"
+                        android:clickable="true"
+                        android:onClick="eventosMenuInicial"
+                        android:background="@drawable/tema_botoes_main"
+                        android:longClickable="false"
+                        android:capitalize="words"
+                        android:textColor="#ffffffff" />
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.4">
+
+                    </RelativeLayout>
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:text="@string/recorde"
+                        android:id="@+id/recorde"
+                        android:layout_weight="1"
+                        android:textSize="@dimen/menu"
+                        android:clickable="true"
+                        android:onClick="eventosMenuInicial"
+                        android:background="@drawable/tema_botoes_main"
+                        android:textColor="#ffffffff" />
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.4" />
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:text="@string/creditos"
+                        android:id="@+id/creditos"
+                        android:layout_weight="1"
+                        android:textSize="@dimen/menu"
+                        android:clickable="true"
+                        android:onClick="eventosMenuInicial"
+                        android:background="@drawable/tema_botoes_main"
+                        android:textColor="#ffffffff" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="7" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="2.8"
+            android:id="@+id/layoutBanner">
+
+            <com.google.android.gms.ads.AdView
+                xmlns:ads="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/adView"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                ads:adUnitId="ca-app-pub-1148127483617292/8119982166"
+                ads:adSize="SMART_BANNER" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

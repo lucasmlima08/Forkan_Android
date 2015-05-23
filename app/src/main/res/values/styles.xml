@@ -1,0 +1,25 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <!-- Estilo do botão de categories. -->
+    <style name="estiloBotaocategories" parent="android:Widget.Button">
+        <item name="android:textSize">@dimen/categoria</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:height">@dimen/botaocategories_tamanhoVertical</item>
+        <item name="android:layout_marginBottom">@dimen/botaoCategoras_margemAbaixo</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <!-- Estilo das categorias no recorde. -->
+    <style name="styleCategoriesRecord" parent="android:Widget.TextView">
+        <item name="android:textSize">@dimen/scoreCategory</item>
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+</resources>

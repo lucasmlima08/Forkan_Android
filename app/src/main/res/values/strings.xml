@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Forkan</string>
+    <string name="copyright">©‎ Lucas M Lima 2015</string>
+    <string name="novoJogo">Jogar</string>
+    <string name="recorde">Recorde</string>
+    <string name="creditos">Créditos</string>
+    <string name="novaPalavra">Nova Palavra</string>
+    <string name="novaCategoria">Nova Categoria</string>
+    <string name="voltarAoInicio">Voltar ao Início</string>
+</resources>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="menu">40dp</dimen>
+    <dimen name="copyright">40dp</dimen>
+    <dimen name="opcoesDuranteJogo">35dp</dimen>
+    <dimen name="categoria">35dp</dimen>
+    <dimen name="letrasJogo">35dp</dimen>
+    <dimen name="palavraChave">40dp</dimen>
+    <dimen name="pontuacaoTempo_final">40dp</dimen>
+    <dimen name="telasFinais">40dp</dimen>
+    <dimen name="botaocategories_tamanhoVertical">125dp</dimen>
+    <dimen name="botaoCategoras_margemAbaixo">10dp</dimen>
+    <dimen name="scoreCategory">43dp</dimen>
+
+</resources>

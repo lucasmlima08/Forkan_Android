@@ -1,0 +1,170 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".Errou"
+    android:background="@drawable/fundo">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:baselineAligned="false"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="7" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="right|center"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.2">
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:id="@+id/titulo"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/tit_errou"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.2">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:textSize="@dimen/palavraChave"
+                        android:id="@+id/palavraChaveErrou"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="1"
+                        android:text="R I O    G R A N D E    D O    N O R T E"
+                        android:textColor="#ff000000"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:textSize="@dimen/pontuacaoTempo_final"
+                        android:id="@+id/pontuacaoErrou"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="1"
+                        android:text="Pontuação: 5"
+                        android:textColor="#ff000000" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:textSize="@dimen/pontuacaoTempo_final"
+                        android:id="@+id/tempoErrou"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="1"
+                        android:text="Tempo: 02m30"
+                        android:textColor="#ff000000" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:text="@string/novaPalavra"
+                        android:id="@+id/novaPalavraErrou"
+                        android:layout_weight="1"
+                        android:textSize="@dimen/telasFinais"
+                        android:clickable="true"
+                        android:onClick="onClick"
+                        android:background="@drawable/tema_botoes_errou"
+                        android:longClickable="false"
+                        android:capitalize="words"
+                        android:textColor="#ffffffff" />
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.4" />
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:text="@string/novaCategoria"
+                        android:id="@+id/novaCategoriaErrou"
+                        android:layout_weight="1"
+                        android:textSize="@dimen/telasFinais"
+                        android:clickable="true"
+                        android:onClick="onClick"
+                        android:background="@drawable/tema_botoes_errou"
+                        android:textColor="#ffffffff" />
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.4" />
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:text="@string/voltarAoInicio"
+                        android:id="@+id/voltarAoInicioErrou"
+                        android:layout_weight="1"
+                        android:textSize="@dimen/telasFinais"
+                        android:clickable="true"
+                        android:onClick="onClick"
+                        android:background="@drawable/tema_botoes_errou"
+                        android:textColor="#ffffffff" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="7" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="3.5"
+            android:id="@+id/layoutBanner">
+
+            <com.google.android.gms.ads.AdView
+                xmlns:ads="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/adView"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                ads:adUnitId="ca-app-pub-1148127483617292/8119982166"
+                ads:adSize="SMART_BANNER"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
