@@ -1,4 +1,4 @@
-# Forka (App Android)
+# Forkan (App Android)
 
 * O Forkan é um jogo da forca onde o jogador escolhe um tema para tentar descobrir a palavra sorteada em um tempo estimado, 
 somando pontos que podem ser vistos no painel de recordes por categorias.
