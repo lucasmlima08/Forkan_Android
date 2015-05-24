@@ -7,7 +7,7 @@ somando pontos que podem ser vistos no painel de recordes por categorias.
 
 # Importante
 
-* Essa versão do Forkan é offline, portanto utiliza arquivos de texto com as palavras do jogo. A versão online se encontra
+* Essa versão do Forkan é offline, portanto utiliza arquivos de texto com as palavras do jogo. A versão para banco de dados se encontra
 aqui: https://github.com/lucasmlima08/Forkan-Remoto.
 
 # Imagens
